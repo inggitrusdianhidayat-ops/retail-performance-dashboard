@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retail Performance Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>Retail BI</h2>
+
+    <ul>
+        <li>Dashboard</li>
+        <li>Sales</li>
+        <li>Profit & Loss</li>
+        <li>Stores</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <h1>Branch Performance Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Sales</h3>
+            <p>Rp 1.245.000.000</p>
+        </div>
+
+        <div class="card">
+            <h3>Gross Profit</h3>
+            <p>Rp 465.000.000</p>
+        </div>
+
+        <div class="card">
+            <h3>Transactions</h3>
+            <p>24.500</p>
+        </div>
+
+        <div class="card">
+            <h3>Basket Size</h3>
+            <p>Rp 85.000</p>
+        </div>
+
+    </div>
+
+    <div class="chart-container">
+        <h2>Weekly Sales Trend</h2>
+        <canvas id="salesChart"></canvas>
+    </div>
+
+    <div class="section">
+
+        <div class="table-box">
+
+            <h2>Profit & Loss Summary</h2>
+
+            <table>
+
+                <tr>
+                    <td>Sales</td>
+                    <td>Rp 1.245.000.000</td>
+                </tr>
+
+                <tr>
+                    <td>COGS</td>
+                    <td>Rp 780.000.000</td>
+                </tr>
+
+                <tr>
+                    <td>Gross Profit</td>
+                    <td>Rp 465.000.000</td>
+                </tr>
+
+                <tr>
+                    <td>Operating Expense</td>
+                    <td>Rp 110.000.000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Net Profit</strong></td>
+                    <td><strong>Rp 355.000.000</strong></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="table-box">
+
+            <h2>Top Categories</h2>
+
+            <table>
+                <tr>
+                    <td>Grocery</td>
+                    <td>Rp 350 Jt</td>
+                </tr>
+
+                <tr>
+                    <td>Cosmetics</td>
+                    <td>Rp 240 Jt</td>
+                </tr>
+
+                <tr>
+                    <td>Fashion</td>
+                    <td>Rp 185 Jt</td>
+                </tr>
+
+                <tr>
+                    <td>Household</td>
+                    <td>Rp 150 Jt</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="table-box">
+
+        <h2>Branch Ranking</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Branch</th>
+                    <th>Sales</th>
+                    <th>Growth</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Subang</td>
+                    <td>Rp 450 Jt</td>
+                    <td>+10%</td>
+                </tr>
+
+                <tr>
+                    <td>Bandung</td>
+                    <td>Rp 380 Jt</td>
+                    <td>+7%</td>
+                </tr>
+
+                <tr>
+                    <td>Cirebon</td>
+                    <td>Rp 280 Jt</td>
+                    <td>+4%</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
